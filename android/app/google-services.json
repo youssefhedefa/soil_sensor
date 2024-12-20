@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "724093975931",
+    "firebase_url": "https://mobile-elbosly-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mobile-elbosly",
+    "storage_bucket": "mobile-elbosly.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724093975931:android:018ae1f8bd7382c6c811de",
+        "android_client_info": {
+          "package_name": "com.example.soil.sensor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASp3HvVKK-qqSXMjaUwTLHwIlNI0XJGdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
