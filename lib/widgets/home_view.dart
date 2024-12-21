@@ -46,21 +46,35 @@ class _HomeViewState extends State<HomeView> {
                           value: data['hum'],
                         ),
                         const CustomDivider(),
-                        CustomChar(
-                          value: data['soil_mositure'],
-                          title: 'Soil Moisture',
+                        // CustomChar(
+                        //   value: data['soil_mositure'],
+                        //   title: 'Soil Moisture',
+                        // ),
+                        Icon(
+                          data['gas'] ? Icons.smoking_rooms : Icons.smoke_free,
+                          size: 100,
+                          color: data['gas'] ? Colors.yellow : Colors.blue,
+                        ),
+                        const SizedBox(
+                          height: 18,
+                        ),
+                        Text(
+                          'Gas: ${data['gas']}',
+                          style: const TextStyle(
+                              fontSize: 20
+                          ),
                         ),
                         const CustomDivider(),
                          Icon(
-                         data['ldr'] ? Icons.light_mode_outlined : Icons.dark_mode,
+                         data['pulse'] ? Icons.favorite : Icons.favorite_border,
                           size: 100,
-                          color: data['ldr'] ? Colors.deepOrangeAccent : Colors.blueAccent,
+                          color: data['pulse'] ? Colors.deepOrangeAccent : Colors.blueAccent,
                         ),
                         const SizedBox(
                           height: 18,
                         ),
                          Text(
-                          'Light : ${data['ldr'] ? 'ON' : 'OFF'}',
+                          'pulse : ${data['pulse']}',
                           style: const TextStyle(
                               fontSize: 20
                           ),
